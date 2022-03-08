@@ -28,7 +28,7 @@ Crear y usar Base
 1. CREATE DATABASE `videojuegos`;
 2. USE `videojuegos`;
 
-3.Crear tabla de categorías
+3. Crear tabla de categorías
  CREATE TABLE `categorias` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `activo` bit(1) NOT NULL,
@@ -36,10 +36,10 @@ Crear y usar Base
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-4.Información tabla categorías
+4. Información tabla categorías
  insert  into `categorias`(`id`,`activo`,`nombre`) values (1,'','Sandbox'),(2,'','Aventura'),(3,'\0','Terror');
 
-5.Crear tabla estudios
+5. Crear tabla estudios
  CREATE TABLE `estudios` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `activo` bit(1) NOT NULL,
@@ -50,7 +50,7 @@ Crear y usar Base
 6. Información tabla estudios
 insert  into `estudios`(`id`,`activo`,`nombre`) values (1,'','Estudio 1'),(2,'','Estudio 2'),(3,'\0','Estudio Test');
 
-7.Creación tabla video juegos
+7. Creación tabla video juegos
  CREATE TABLE `videojuegos` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `activo` bit(1) NOT NULL,
