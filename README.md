@@ -28,30 +28,30 @@ Crear y usar Base
 1. CREATE DATABASE `videojuegos`;
 2. USE `videojuegos`;
 
-Crear tabla de categorías
-3. CREATE TABLE `categorias` (
+3.Crear tabla de categorías
+ CREATE TABLE `categorias` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `activo` bit(1) NOT NULL,
   `nombre` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-Información tabla categorías
-4. insert  into `categorias`(`id`,`activo`,`nombre`) values (1,'','Sandbox'),(2,'','Aventura'),(3,'\0','Terror');
+4.Información tabla categorías
+ insert  into `categorias`(`id`,`activo`,`nombre`) values (1,'','Sandbox'),(2,'','Aventura'),(3,'\0','Terror');
 
-Crear tabla estudios
-5. CREATE TABLE `estudios` (
+5.Crear tabla estudios
+ CREATE TABLE `estudios` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `activo` bit(1) NOT NULL,
   `nombre` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-Información tabla estudios
-6. insert  into `estudios`(`id`,`activo`,`nombre`) values (1,'','Estudio 1'),(2,'','Estudio 2'),(3,'\0','Estudio Test');
+6. Información tabla estudios
+insert  into `estudios`(`id`,`activo`,`nombre`) values (1,'','Estudio 1'),(2,'','Estudio 2'),(3,'\0','Estudio Test');
 
-Creación tabla video juegos
-7. CREATE TABLE `videojuegos` (
+7.Creación tabla video juegos
+ CREATE TABLE `videojuegos` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `activo` bit(1) NOT NULL,
   `descripcion` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
