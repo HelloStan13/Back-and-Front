@@ -69,8 +69,8 @@ insert  into `estudios`(`id`,`activo`,`nombre`) values (1,'','Estudio 1'),(2,'
   CONSTRAINT `FKev9v8m1hnvqlpne73pgko027c` FOREIGN KEY (`fk_estudio`) REFERENCES `estudios` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-/* Insertar video juegos  */
-### Recuerde copiar la carpeta video juegos de lo contratio las imagenes no se van a  ver
+### Insertar video juegos
+#### Recuerde copiar la carpeta video juegos de lo contratio las imagenes no se van a  ver
 
 8. INSERT INTO `videojuegos`.`videojuegos` (`id`, `activo`, `descripcion`, `fecha_lanzamiento`, `imagen`, `precio`, `stock`, `titulo`, `fk_categoria`, `fk_estudio`) 
 VALUES (1, 1, 'Aventuras y mas', '2021-09-06 21:50:17', '3.png', 150, 2, 'Spiderman 1', 1, 2);
